@@ -1,6 +1,6 @@
 # About this repository  
-This repository uses a python script and a GitHub action to update periodically this README.md file with the list of public repositories from my GitHub account. It doesnt include my repositories coming from a fork. For each repository, this script includes some details like the name, the description, the topics,  ...  
-#Repository output  
+This repository uses a python script and a GitHub action to update periodically this README.md file with the list of public repositories from my GitHub account. It doesnt include my repositories coming from a fork. For each repository, this script includes some details like the name, the description, the topics, ...  
+# Repository output  
 **Name**: arista-cloudvision-automation  
 **Description**: This repository has Arista CloudVision automation examples  
 **Topics**: ['arista', 'arista-automation', 'arista-cloudvision', 'arista-networks', 'cloudvision', 'gnmi', 'grpc', 'network-automation', 'openapi', 'openconfig', 'restconf', 'streaming', 'telemetry', 'yang']  
