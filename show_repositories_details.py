@@ -26,7 +26,7 @@ def main():
     # each github page has a maximum of 30 repositories. 
     # lets start to get all repositories from the first page
     with open("README.md", 'w') as outfile:
-        outfile.write("# About this repository  \nThis repository uses a python script and a GitHub action to update periodically this README.md file with the list of public repositories from my GitHub account. It doesnt include my repositories coming from a fork. For each repository, this script includes some details like the name, the description, the topics, ...  \n#Repository output  \n")
+        outfile.write("# About this repository  \nThis repository uses a python script and a GitHub action to update periodically this README.md file with the list of public repositories from my GitHub account. It doesnt include my repositories coming from a fork. For each repository, this script includes some details like the name, the description, the topics, ...  \n# Repository output  \n")
     page = 1
     user = 'ksator'
     URL = 'https://api.github.com/users/' + user + '/repos?page=' + str(page)
