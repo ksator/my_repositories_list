@@ -17,10 +17,9 @@ def get_details_about_a_repository(repo):
     topics = str(repo['topics'])
     if not topics:
         topics = ''
-    language = str(repo['language'])
     stars = str(repo['stargazers_count'])
     url = repo['html_url']
-    repository_details = '**Name**: ' + name + '  \n' + '**Description**: ' + description + '  \n' + '**Topics**: ' + topics + '  \n' + '**Language**: ' + language + '  \n' + '**Stars**: ' + stars + '  \n' + '**URL**: ' + url + '  \n' + '*'*70 + '  \n'
+    repository_details = '**Name**: ' + name + '  \n' + '**Description**: ' + description + '  \n' + '**Topics**: ' + topics + '  \n' + '**Stars**: ' + stars + '  \n' + '**URL**: ' + url + '  \n' + '*'*70 + '  \n'
     return (repository_details)
 
 def main():
