@@ -20,14 +20,14 @@ def get_details_about_a_repo(repo):
     language = str(repo['language'])
     stars = str(repo['stargazers_count'])
     url = repo['html_url']
-    details = 'Name: ' + name + '  ' + 'Description: ' + description + '  ' + 'Topics: ' + topics + '  ' + 'Language: ' + language + '  ' + 'Stars: ' + stars + '  ' + 'URL: ' + url + '  ' + '*'*70 + '  '
+    details = 'Name: ' + name + '  \n' + 'Description: ' + description + '  \n' + 'Topics: ' + topics + '  \n' + 'Language: ' + language + '  \n' + 'Stars: ' + stars + '  \n' + 'URL: ' + url + '  \n' + '*'*70 + '  \n'
     return (details)
 
 def main():
     # each github page has a maximum of 30 repositories. 
     # lets start to get all repositories from the first page
     with open("README.md", 'w') as outfile:
-        outfile.write("here's the list of public repositories under this user that are not comning from a fork")
+        outfile.write("Here's the list of public repositories under this user that are not comning from a fork  \n" + '*'*70 + '  \n')
     page = 1
     user = 'ksator'
     URL = 'https://api.github.com/users/' + user + '/repos?page=' + str(page)
