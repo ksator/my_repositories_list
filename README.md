@@ -436,7 +436,7 @@ This repository uses a python script and a GitHub action to update periodically 
 **Name**: python-training-for-network-engineers  
 **Description**: Python hands-on training for network engineers. How to automate Junos with Python  
 **Topics**: ['jinja2', 'json', 'junos-automation', 'lxml', 'napalm', 'ncclient', 'netconf', 'pyez', 'python', 'rest-api', 'yaml']  
-**Stars**: 112  
+**Stars**: 113  
 **URL**: https://github.com/ksator/python-training-for-network-engineers  
 **********************************************************************  
 **Name**: restconf_demo_with_arista  
