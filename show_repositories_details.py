@@ -2,7 +2,7 @@
 
 """
 This script writes in the README.md file the list of public repositories from a GitHub user.
-It doesnt include the repositories comming from a fork.
+It doesnt include the repositories coming from a fork.
 For each repository, this script includes some details like the repository name, the topics, the language ...
 """
 
@@ -27,7 +27,7 @@ def main():
     # each github page has a maximum of 30 repositories. 
     # lets start to get all repositories from the first page
     with open("README.md", 'w') as outfile:
-        outfile.write("This repository uses a python script and a GitHub action to update periodycally the README.md file with the list of public repositories from my GitHub account. It doesnt include my repositories comming from a fork. For each repository, this script includes some details like the repository name, the topics, the language ...  \n" + '*'*70 + '  \n')
+        outfile.write("This repository uses a python script and a GitHub action to update periodically the README.md file with the list of public repositories from my GitHub account. It doesnt include my repositories coming from a fork. For each repository, this script includes some details like the name, the description, the topics,  ...  \n" + '*'*70 + '  \n')
     page = 1
     user = 'ksator'
     URL = 'https://api.github.com/users/' + user + '/repos?page=' + str(page)
