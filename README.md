@@ -331,6 +331,10 @@ This repository uses a python script and a GitHub action to periodically update 
 **Description**: Telegraf with SNMP MIB loaded. SNMP monitoring with Telegraf  
 **Topics**: docker, junos, junos-monitoring, snmp, telegraf  
 **********************************************************************  
+**Name**: [test](https://github.com/ksator/test)  
+**Description**:   
+**Topics**:   
+**********************************************************************  
 **Name**: [test_bgp_performance](https://github.com/ksator/test_bgp_performance)  
 **Description**: This repository has network automation content for EOS devices. It configures BGP, generates a large number of routes and monitor the BGP queues.  
 **Topics**: arista, arista-automation, arista-networks, network-automation  
