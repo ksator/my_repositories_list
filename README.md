@@ -1,3 +1,5 @@
+[![Update automatically the repository](https://github.com/ksator/my_repositories_list/actions/workflows/actions.yml/badge.svg)](https://github.com/ksator/my_repositories_list/actions/workflows/actions.yml)  
+
 # About this repository  
 
 This repository uses a python script and a GitHub action to periodically update this README.md file with the list of public repositories from my GitHub account. It doesnt include my repositories coming from a fork. For each repository, this script includes some details like the name, the description, the topics, ...  
