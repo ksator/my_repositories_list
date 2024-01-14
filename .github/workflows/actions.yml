@@ -24,7 +24,7 @@ jobs:
           git add .
           git commit -m "update the list of repositories"
       - name: push changes
-        if : git status --porcelain | wc -l > 0
+        if : ${{git status --porcelain | wc -l > 0}}
         uses: ad-m/github-push-action@v0.7.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
