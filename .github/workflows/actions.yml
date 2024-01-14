@@ -22,9 +22,8 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "update the list of repositories"
+          if [ "$(git status --porcelain | wc -l)" -eq 0 ]; then echo "nothing to commit"; else git commit -m "update the list of repositories"; fi
       - name: push changes
-        if : ${{git status --porcelain | wc -l > 0}}
         uses: ad-m/github-push-action@v0.7.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
