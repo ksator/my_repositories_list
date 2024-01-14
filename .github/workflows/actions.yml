@@ -14,8 +14,7 @@ jobs:
         with:
           python-version: '3.9.13'  
       - name: install python packages
-        run: |
-          pip install -r requirements.txt   
+        run: pip install -r requirements.txt   
       - name: execute py script
         run: python show_repositories_details.py
       - name: commit files
