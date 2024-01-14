@@ -2,7 +2,7 @@ name: update the repository
 
 on:
   schedule:
-    - cron: '0 */12 * * *' # Runs every 12 hours
+    - cron: '*/5 * * * *' # Runs every 12 hours
 jobs:
   build:
     runs-on: ubuntu-20.04
@@ -24,6 +24,7 @@ jobs:
           git add .
           git commit -m "update the list of repositories"
       - name: push changes
+        if : git status --porcelain | wc -l > 0
         uses: ad-m/github-push-action@v0.7.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
