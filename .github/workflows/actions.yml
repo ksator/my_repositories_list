@@ -2,7 +2,7 @@ name: run show_my_repositories_details.py
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # Runs every 12 hours
+    - cron: '*/6 * * * *' # Runs every 12 hours
 
 jobs:
   build:
