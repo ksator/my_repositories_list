@@ -3,7 +3,7 @@
 """
 This script writes in the README.md file the list of public repositories from a GitHub user.
 It doesnt include the repositories coming from a fork.
-For each repository, this script includes some details like the name, description, topics, URL ...
+For each repository, this script includes some details like the name, description, topics ...
 """
 
 import json
