@@ -20,7 +20,7 @@ def get_details_about_a_repository(repo):
     else: 
         topics = ' '.join(topics)
     url = repo['html_url']
-    repository_details = '**Name**: ' + name + '  \n' + '**Description**: ' + description + '  \n' + '**Topics**: ' + topics + '  \n' + '**URL**: ' + url + '  \n' + '*'*70 + '  \n'
+    repository_details = '**Name**: ' + '[' + name + ']' + URL + '  \n' + '**Description**: ' + description + '  \n' + '**Topics**: ' + topics + '  \n' + '*'*70 + '  \n'
     return (repository_details)
 
 def main():
