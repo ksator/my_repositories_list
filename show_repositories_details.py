@@ -14,12 +14,13 @@ def get_details_about_a_repository(repo):
     description = repo['description']
     if not description:
         description = ''
-    topics = str(repo['topics'])
+    topics = repo['topics']
     if not topics:
         topics = ''
-    stars = str(repo['stargazers_count'])
+    else: 
+        topics = ' '.join(topics)
     url = repo['html_url']
-    repository_details = '**Name**: ' + name + '  \n' + '**Description**: ' + description + '  \n' + '**Topics**: ' + topics + '  \n' + '**Stars**: ' + stars + '  \n' + '**URL**: ' + url + '  \n' + '*'*70 + '  \n'
+    repository_details = '**Name**: ' + name + '  \n' + '**Description**: ' + description + '  \n' + '**Topics**: ' + topics + '  \n' + '**URL**: ' + url + '  \n' + '*'*70 + '  \n'
     return (repository_details)
 
 def main():
