@@ -1,4 +1,4 @@
-name: run show_my_repositories_details.py
+name: update the repository
 
 on:
   schedule:
