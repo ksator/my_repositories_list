@@ -2,7 +2,7 @@ name: update the repository
 
 on:
   schedule:
-    - cron: '* */12 * * *' # Runs every 12 hours
+    - cron: '0 * * * *' # Runs every hour
 
 jobs:
   build:
