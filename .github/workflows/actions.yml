@@ -1,4 +1,4 @@
-name: update the repository
+name: Update automatically the repository
 
 on:
   schedule:
